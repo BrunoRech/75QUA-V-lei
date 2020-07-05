@@ -1,6 +1,6 @@
 /* eslint-disable default-case */
 import React, { useState } from "react";
-import { Form, Modal, Icon, Item, Button } from "semantic-ui-react";
+import { Form, Modal, Item, Button } from "semantic-ui-react";
 import { Container, ItemGroup, LogContainer, Label } from "./styles/appStyles";
 import aImage from "./images/a.jpg";
 import bImage from "./images/b.jpg";
@@ -208,10 +208,10 @@ export default () => {
       </Modal>
 
       <Modal open={openSetConfirmationModal} size="tiny">
-        <Modal.Header>Confime o início do próximo set</Modal.Header>
+        <Modal.Header>Confime o início do próximo set/fim da partida</Modal.Header>
         <Modal.Content>
           <Button onClick={handleNextGameSet} primary fluid>
-            Avançar para o próximo set
+            Avançar/Mostrar vencedor da partida
           </Button>
         </Modal.Content>
       </Modal>
