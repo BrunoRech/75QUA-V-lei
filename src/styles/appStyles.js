@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { Item, Button } from "semantic-ui-react";
 
 export const Container = styled.div`
+  margin-top: 15px;
   display: flex;
   justify-content: center;
+  display: grid;
 `;
 
 export const ItemGroup = styled(Item.Group)`
@@ -25,4 +27,10 @@ export const IconButton = styled(Button)`
 
 export const Label = styled.h3`
   margin: 0;
+`;
+
+export const LogContainer = styled.div`
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  padding: 10px;
 `;

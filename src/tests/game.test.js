@@ -14,25 +14,19 @@ test("Verifica o vencedor do jogo", () => {
 
 test("Verifica o vencedor de um game set", () => {
   expect(checkPoints(25, 20, 2)).toStrictEqual({
-    pointsA: 25,
-    pointsB: 20,
-    winner: "A",
+    winner: "A"
   });
 });
 
 test("Verifica o vencedor de um game set", () => {
   expect(checkPoints(15, 10, 5)).toStrictEqual({
-    pointsA: 15,
-    pointsB: 10,
-    winner: "A",
+    winner: "A"
   });
 });
 
 test("Verifica o vencedor de um game set", () => {
   expect(checkPoints(15, 17, 5)).toStrictEqual({
-    pointsA: 15,
-    pointsB: 17,
-    winner: "B",
+    winner: "B"
   });
 });
 

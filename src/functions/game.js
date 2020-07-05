@@ -7,10 +7,10 @@ export const checkPoints = (pointsA, pointsB, currentSet) => {
   const FINISH_POINTS =
     currentSet === MAX_GAME_SETS ? END_LAST_SET : END_COMMON_SET;
   if (pointsA >= FINISH_POINTS && pointsA - pointsB >= ADVANTAGE_TO_WIN) {
-    return { winner: "A", pointsA, pointsB };
+    return { winner: "A" };
   }
   if (pointsB >= FINISH_POINTS && pointsB - pointsA >= ADVANTAGE_TO_WIN) {
-    return { winner: "B", pointsA, pointsB };
+    return { winner: "B" };
   }
   return false;
 };
